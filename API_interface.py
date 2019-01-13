@@ -9,14 +9,20 @@ Exports
 import os
 import pickle
 import requests
+import yaml
 
 from utils import moveToSubfolder, pull_filenames, write_to_csv
 
-app_ids = {
-            # 'projectName: numberID
-            }
 
-token = '' # token here as string
+with open("example.yaml", 'r') as stream:
+    try:
+        settings = dict(yaml.load(stream))
+    except yaml.YAMLError as exc:
+        print(exc, "check your settngs.yml for proper settings")
+
+app_ids = settings.apps
+token = settings.token
+
 headers = {'X-TrackerToken': token}
 
 def request():

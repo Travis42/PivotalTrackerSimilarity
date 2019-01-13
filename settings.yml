@@ -1,0 +1,4 @@
+token: 'token as string'
+apps:
+    app1: 'id number'
+    app2: 'id number, etc.'
