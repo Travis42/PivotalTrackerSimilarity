@@ -1,7 +1,7 @@
 # PivotalTrackerSimilarity
 Seeks to find simliar Stories among several Trackers in Pivotal Tracker
 
-Current Status: BROKEN. Pivotal changed their API, and until I find a good use for this, I won't be learning their new one.
+**Current Status: BROKEN.** Pivotal changed their API, and until I find a good use for this, I won't be learning their new one.
 Project is on hold.
 
 The implementation uses TFIDF to find similarities and presents those in a per-project .txt output.
